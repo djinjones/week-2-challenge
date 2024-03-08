@@ -11,9 +11,9 @@
         <Nav>
             <h1>Dan Jones</h1>
             <div class="nav-link">
-                <a href="#me">About Me</a>
-                <a href="#">Projects</a>
-            <a href="#con">Contact</a>
+                <a style="text-decoration:none" href="#me">About Me</a>
+                <a style="text-decoration:none" href="#project">Projects</a>
+                <a style="text-decoration:none" href="#con">Contact</a>
             </div>
             <!-- <div class="social-media"> 
                 <a href="https://x.com/elonmusk"><img id="x" src="./assets/xicon.png"></a>
@@ -25,52 +25,50 @@
     </header>
     
         <section class="hero">
-            <div class="card-large">
-            <h2>Payroll Tracker</h2>
-            <p>
-                HTML, CSS and Javascript
-            </p>
+            <div class="card-box">
+                <div class="hero-card">
+                <figure class="card-title">
+                <h2>Payroll Tracker</h2>
+                <p>HTML, CSS and Javascript</p>
+                <figcaption class="coming-soon">COMING SOON!</figcaption>
+                </div>
             </div>
         </section>
     <main class="content">
-        <div clas="card-box">
-            <figure id="CSS" class="card">
-                <section class="card-title">
+        <div class="card-box">
+            <figure id="project" class="card">
+<!-- /* In the future I plan to make a css animating webpage. I was inspired by a webpage showing a solar system and would like to make my own using CSS in the future.*/  -->
+                <section id="CSS" class="card-title">
                     <h2>CSS Animation</h2>
-                </section>
-                <section>
-                    <p>
-                        HTML and CSS
-                    </p>
+                    <p>HTML and CSS</p>
+                    <figcaption class="coming-soon">COMING SOON!</figcaption>
                 </section>
             </figure>
             <figure id="sudoku" class="card">
+<!-- /* Although we haven't learned Javascript yet, I eventually plan on building my own sudoku webpage using Javascript for the logic.*/ -->
                 <section class="card-title">
                     <h2>Sudoku</h2>
-                </section>
-                <section>
                     <p>HTML, CSS and Javascript</p>
+                    <figcaption class="coming-soon">COMING SOON!</figcaption>
                 </section>
             </figure>
         </div>
         <aside id="me" class="about-me">
+            <img id="profile-picture" src="./assets/meparis.jpg">
             <h2>About Me</h2>
-            <img id="profile-picture" href="./assets/">
             <p>My name is Dan Jones and I am taking a full stack web development course. I'm a Colorado native with a passion for technology and a deep love for the breathtaking landscapes that surround me. Currently studying full-stack development, I enjoy crafting digital solutions that mirror the innovation and beauty of the Rocky Mountains. As a student on a journey to master the art of coding, I thrive on challenges and constantly seek new ways to expand my skills.
-                <!-- Yes, this was written by AI, but as of right now I'm not entirely sure  -->
+                <!-- Yes, this was written by AI, but as of right now I'm not entirely sure what I want in my about me page. -->
             </p>
             <h2>Goal</h2>
-            <p>This website is designed to be a portfolio to showcase my future projects.I will be adding both: in class, and out of class projects to my portfolio in the coming weeks. My ultimate goal with this website is to challenge myself and learn new skills to improve my HTML, CSS and Javascript knowledge. </p>
+            <p>This website is designed to be a portfolio to showcase my future projects.I will be adding both: in class, and out of class projects to my portfolio in the coming weeks. My ultimate goal with this website is to challenge myself and learn new skills to improve my HTML, CSS and Javascript knowledge. The future projects I have planned as of now are: Sudoku game, CSS animation webpage and</p>
         </aside>
     </main>
     <footer>
-        <section id="con">
-            
-            <a href="https://djinjones.github.com">github</a>
+        <section id="con" class="contact">
+            <a href="https://djinjones.github.com">Github</a>
             <a href="djones5205@gmail.com">Email</a>
-            
         </section>
-        <p>Made with ❤️ from Dan Jones</p>
+        <p>Designed with ❤️ from Dan Jones</p>
     </footer>
 </body>
 </html>

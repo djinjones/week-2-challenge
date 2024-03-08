@@ -1,6 +1,7 @@
 :root{
-    --font1: rgb(32, 32, 32);
-    --font2: rgb(35, 37, 46);
+    --font1: rgb(221, 97, 97);
+    --font2: rgb(253, 233, 252);
+    --box-background: rgb(240, 212, 212);
     /* I decided on this color scheme after looking at several websites and art portfolios */
 }
 
@@ -10,7 +11,8 @@
     padding: 0;
     font-family: Tahoma, "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
 }
-nav{
+
+nav {
     display: flex;
     color: var(--font1);
     height: 90px;
@@ -31,6 +33,10 @@ h1 {
     text-decoration: none;
     margin-right: 10px;
     margin-left: auto;
+}
+
+.nav-link a {
+    padding: 0px 10px 0px
 }
 
 /* .social-media img {
@@ -56,48 +62,122 @@ body {
 }
 
 .hero {
-    width: 100vw;
-    margin: 20px 20px 20px 20px;
-
+    width: 90vw;
+    height: 70vh;
+    margin: 20px auto 20px;
 }
 
-.card-large {
-
+.hero-card {
+    flex-direction: column;
+    padding: 10px 10px 10px;
+    border: solid black 2px;
+    background-image: url(https://fitsmallbusiness.com/wp-content/uploads/2021/10/Screenshot_of_Monthly_Payroll_Tabs_Sum_in_One_Column.jpg);
+    padding: 10px;
+    margin: 20px;
+    height: 60vh;
 }
+
+/* I am using the class: 'hero' for the main project on my website. This will be our challenge week 3 assingment which is technically our first project so I wanted to use this for the main project in my portfolio */
 
 .content {
     display: flex;
     flex-wrap: wrap;
     width: 90vw;
-    height: 70vh;
-    border: solid black 2px;
+    height: auto;
     margin: 20px auto 20px ;
-
-    
 }
+
+/* With the current code I have written, I will be able to add more projects underneath the current 2 on the website using the .card-box and .card classes. I wrote the code in a way that I can easily add new content to the website without having to change anything except the html*/
 
 .card-box {
     flex-direction: column;
+    padding: 10px 10px 10px;
 }
 
-.card {
+/* .card {
     width: 45vw;
     display: flex;
     flex-direction: column;
     height: 30vh;
-    border: dashed black 3px;
+    border: solid black 2px;
     padding: 10px;
     margin: 20px;
+} */
+
+#CSS {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    color: var(--font2);
+    height: 30vh;
+    border: solid black 2px;
+    padding: 10px;
+    margin: 20px;
+    background-size: 800px;
+    background-image: url(https://i.gifer.com/BXe0.gif);
+}
+
+#sudoku {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    border: solid black 2px;
+    padding: 10px;
+    margin: 20px;
+    background-size: 800px;
+    background-image: url(https://store-images.s-microsoft.com/image/apps.51614.14043557400480129.785a8c27-f3e7-4873-a3fb-94a2c71337d6.3ec510c9-bd42-4693-a2d2-ab63cf055fee?mode=scale&q=90&h=1080&w=1920);
+  
+}
+
+.coming-soon {
+    display: none;
+    font-size: 3.5rem;
+    margin: auto;
+    padding: 10px 10px 10px;
+    color: var(--font1);
+}
+
+.card:hover .coming-soon {
+    display: flex;
+}
+
+#profile-picture {
+    display: flex;
+    height: 200px;
+    width: 170px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.hero-card:hover .coming-soon {
+    display: flex;
+}
+
+.hero-card:hover {
+    cursor: pointer;
 }
 
 .about-me {
     color: var(--font1);
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 35vw;
     margin-right: 20px;
     margin-left: auto;
+}
+
+.about-me h2 {
+    padding: 10px 0px 10px;
+}
+
+.about-me p {
+    text-align: center;
+    line-height: 1.5rem;
 }
 
 footer {
@@ -119,8 +199,8 @@ footer p {
 
 .contact a {
 
-    padding: 10px;
-    margin: auto;
+    padding: 10px 0px 10px ;
+    margin: 10px 0px 10px;
 }
 /* 
 @media screen{max-width: 762px;
