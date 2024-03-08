@@ -1,0 +1,130 @@
+:root{
+    --font1: rgb(32, 32, 32);
+    --font2: rgb(35, 37, 46);
+    /* I decided on this color scheme after looking at several websites and art portfolios */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    color: var(--font1);
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid black 2px;
+    padding: 0rem calc((100vw - 1300px)/2);
+}
+
+h1 {
+    color: var(--font1);
+    margin-left: 10px;
+    
+}
+
+.nav-link {
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+/* .social-media img {
+    width: 30px;
+    padding: 20px;
+    margin-right: 0%;
+
+}
+
+.social-media {
+    max-width: 30px;
+    max-height: 30px;
+    display: flex;
+    margin-right: 100px;
+    margin-top: 10px;
+} 
+This code was for the social media link buttons, but I dont use social media so I am not including it in my website
+*/
+
+body {
+    background-color: rgb(223, 250, 234);
+    /* background: linear-gradient(0.25turn, rgb(253, 183, 183), rgb(236, 236, 236)); I am leaving this code here incase I decide to use the gradient later*/
+}
+
+.hero {
+    width: 100vw;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.card-large {
+
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 70vh;
+    border: solid black 2px;
+    margin: 20px auto 20px ;
+
+    
+}
+
+.card-box {
+    flex-direction: column;
+}
+
+.card {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    border: dashed black 3px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.about-me {
+    color: var(--font1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 35vw;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+footer {
+    border-top: solid black 2px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+.contact {
+
+    margin-top: 20px;
+}
+
+.contact a {
+
+    padding: 10px;
+    margin: auto;
+}
+/* 
+@media screen{max-width: 762px;
+    .card {
+        flex-direction: column;
+    }
+} */
