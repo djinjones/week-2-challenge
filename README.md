@@ -20,6 +20,8 @@ As well as a portfolio for my projects, I also wanted to create an about me seci
 
 - [Links](#links)
 - [API](#api)
+- [References](#references)
+- [Resources](#resources)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -30,6 +32,17 @@ As well as a portfolio for my projects, I also wanted to create an about me seci
 ## API
 
 N/A
+
+## References
+
+- [archbee](https://www.archbee.com/blog)
+- [Mdn](https://developer.mozilla.org/en-US/)
+- [W3 schools](https://www.w3schools.com)
+
+## Resources
+
+- [Github banner generator](https://leviarista.github.io/github-profile-header-generator/)
+- [Github markdown-badges](https://ileriayo.github.io/markdown-badges/)
 
 ## Contributing
 

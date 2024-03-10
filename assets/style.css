@@ -2,7 +2,8 @@
     --font1: rgb(221, 97, 97);
     --font2: rgb(253, 233, 252);
     --box-background: rgb(240, 212, 212);
-    /* I decided on this color scheme after looking at several websites and art portfolios */
+    --background1: rgb(10, 14, 11);
+    /* I decided on this color scheme after looking at several websites and art portfolios. I prefer dark theme with a medium amount of contrast. */
 }
 
 * {
@@ -12,10 +13,22 @@
     font-family: Tahoma, "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(10, 14, 11);
+    /* background: linear-gradient(0.25turn, rgb(253, 183, 183), rgb(236, 236, 236)); I am leaving this code here incase I decide to use the gradient later*/
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+/* -------------------------NAV------------------------- */
+
 nav {
     display: flex;
     color: var(--font1);
     height: 90px;
+    margin-bottom: 40px;
     align-items: center;
     justify-content: space-between;
     border-bottom: solid var(--font1) 2px;
@@ -57,10 +70,7 @@ h1 {
 This code was for the social media link buttons, but I dont use social media so I am not including it in my website
 */
 
-body {
-    background-color: rgb(10, 14, 11);
-    /* background: linear-gradient(0.25turn, rgb(253, 183, 183), rgb(236, 236, 236)); I am leaving this code here incase I decide to use the gradient later*/
-}
+/* -------------------------HERO------------------------- */
 
 .hero {
     width: 90vw;
@@ -77,8 +87,8 @@ body {
     margin: 20px;
     height: 60vh;
 }
-
 /* I am using the class: 'hero' for the main project on my website. This will be our challenge week 3 assingment which is technically our first project so I wanted to use this for the main project in my portfolio */
+/* -------------------------MAIN------------------------- */
 
 .content {
     display: flex;
@@ -88,11 +98,20 @@ body {
     margin: 20px auto 20px ;
 }
 
+.card a {
+    text-decoration: none;
+}
+
 /* With the current code I have written, I will be able to add more projects underneath the current 2 on the website using the .card-box and .card classes. I wrote the code in a way that I can easily add new content to the website without having to change anything except the html*/
 
 .card-box {
     flex-direction: column;
     padding: 10px 10px 10px;
+    border: solid var(--font1) 2px;
+}
+
+.card-title {
+    text-decoration: none;
 }
 
 /* .card {
@@ -110,8 +129,9 @@ body {
     display: flex;
     flex-direction: column;
     color: var(--font2);
-    height: 30vh;
+    height: 40vh;
     border: solid black 2px;
+    text-decoration: none;
     padding: 10px;
     margin: 20px;
     background-size: 800px;
@@ -122,13 +142,14 @@ body {
     width: 45vw;
     display: flex;
     flex-direction: column;
-    height: 30vh;
+    height: 40vh;
+    color: var(--font2);
+    text-decoration: none;
     border: solid black 2px;
     padding: 10px;
     margin: 20px;
     background-size: 800px;
     background-image: url(https://store-images.s-microsoft.com/image/apps.51614.14043557400480129.785a8c27-f3e7-4873-a3fb-94a2c71337d6.3ec510c9-bd42-4693-a2d2-ab63cf055fee?mode=scale&q=90&h=1080&w=1920);
-  
 }
 
 .coming-soon {
@@ -170,6 +191,7 @@ body {
     max-width: 35vw;
     margin-right: 20px;
     margin-left: auto;
+    border: solid var(--font1) 2px;
 }
 
 .about-me h2 {
@@ -178,11 +200,14 @@ body {
 
 .about-me p {
     text-align: center;
+    padding: 5px 5px 5px;
     line-height: 1.5rem;
 }
 
+/* -------------------------FOOTER------------------------- */
+
 footer {
-    border-top: solid black 2px;
+    border-top: solid var(--font1) 2px;
     display: flex;
     width: 100vw;
     flex-direction: column;
@@ -191,21 +216,66 @@ footer {
 
 footer p {
     margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--font1);
 }
 
 .contact {
     color: var(--font1);
     margin-top: 20px;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 1.7rem;
 }
 
 .contact a {
-
+    
     padding: 10px 0px 10px ;
     margin: 10px 0px 10px;
 }
-/* 
-@media screen{max-width: 762px;
-    .card {
-        flex-direction: column;
+
+/* -------------------------MEDIA SCREEN------------------------- */
+
+@media screen and (max-width: 800px){
+        .about-me {
+        justify-content: center;
+        align-items: center;
+        max-width: 80vw;
+        margin-left: 20px;
+        margin-right: auto;
+        }
+
+        .card {
+            padding: 5px;
+        }
+
+        .coming-soon {
+            font-size: 2rem;
+        }
+
+        .content {
+            justify-content: center;
+            padding: 0;
+        }
+
+        #CSS {
+            max-width: 80vw;
+            width: 80vw;
+            margin: auto;
+        }
+        #sudoku {
+            max-width: 80vw;
+            width: 80vw;
+            margin: auto;
+           
+        }
+
+        .nav-link {
+            padding: 5px;
+            width: 100vw;
+            flex-wrap: nowrap;
+        }
     }
-} */
+

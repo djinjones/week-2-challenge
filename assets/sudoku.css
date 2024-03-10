@@ -1,0 +1,150 @@
+:root {
+    --font1: rgb(221, 97, 97);
+    --font2: rgb(253, 233, 252);
+    --box-background: rgb(240, 212, 212);
+    --background1: rgb(10, 14, 11);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, "Arial Narrow", Arial, "Helvetica Condensed", Helvetica, sans-serif;
+    background-color: var(--background1);
+}
+
+/* I copied the same settings from the portfolio page's css to maintain a similar look for the sudoku game */
+
+/* -------------------------NAV------------------------- */
+
+.nav {
+    width: 100vw;
+    height: 80px;
+    padding: 10px 10px 10px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px var(--font1);
+}
+
+.nav h1 {
+    margin-left: 40px;
+    color: var(--font1);
+    font-size: 2rem;
+}
+
+.nav h2 {
+    margin-right: 40px;
+    margin-left: auto;
+}
+
+.nav h2 a {
+    text-decoration: none;
+    color: var(--font1);
+}
+
+/* -------------------------MAIN------------------------- */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* -------------------------SETTINGS------------------------- */
+
+.settings {
+    margin: 20px 20px 20px;
+    padding: 5px 5px 5px;
+    height: 70vh;
+    width: 25vw;
+    border: solid var(--font1) 2px;
+    color: var(--box-background);
+}
+
+.settings h2 {
+    margin: 10px 10px 10px;
+    padding: 10px 10px 10px;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+}
+
+.reset button {
+    color: var(--box-background);
+    border-radius: 10%;
+    box-shadow: 1px 1px;
+    margin: 20px auto 20px auto;
+    padding: 10px 10px 10px;
+}
+
+.difficulty form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/* -------------------------GAME------------------------- */
+
+.game {
+    margin: 20px 20px 20px auto;
+    margin-right: 5;
+    padding: 5px 5px 5px;
+    height: 70vh;
+    width: 55vw;
+    border: solid var(--font1) 2px;
+    color: var(--box-background);
+}
+
+.board {
+    border: solid var(--font1) 1px;
+    margin: auto;
+    width: 540px;
+    height: 540px;
+
+}
+
+
+/* -------------------------FOOTER------------------------- */
+
+footer {
+    border-top: solid var(--font1) 2px;
+    display: flex;
+    line-height: 1.5rem;
+    min-height: 20vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-top: px;
+    margin-bottom: 20px;
+    color: var(--font1);
+}
+
+.contact {
+    color: var(--font1);
+    margin-top: 20px;
+    text-align: center;
+    height: 100px;
+ 
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: var(--font1);
+    padding: 10px 0px 10px ;
+    margin: 10px 0px 10px;
+}
+
+/* -------------------------MEDIA SCREEN------------------------- */
+
+@media screen and (max-width: 800px) {
+    
+}
