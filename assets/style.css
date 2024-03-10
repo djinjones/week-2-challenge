@@ -100,6 +100,7 @@ This code was for the social media link buttons, but I dont use social media so 
 
 .card a {
     text-decoration: none;
+    
 }
 
 /* With the current code I have written, I will be able to add more projects underneath the current 2 on the website using the .card-box and .card classes. I wrote the code in a way that I can easily add new content to the website without having to change anything except the html*/
@@ -108,10 +109,6 @@ This code was for the social media link buttons, but I dont use social media so 
     flex-direction: column;
     padding: 10px 10px 10px;
     border: solid var(--font1) 2px;
-}
-
-.card-title {
-    text-decoration: none;
 }
 
 /* .card {
@@ -172,6 +169,7 @@ This code was for the social media link buttons, but I dont use social media so 
 
 .card:hover {
     cursor: pointer;
+    box-shadow: 2px 2px 30px var(--font1);
 }
 
 .hero-card:hover .coming-soon {
@@ -180,6 +178,13 @@ This code was for the social media link buttons, but I dont use social media so 
 
 .hero-card:hover {
     cursor: pointer;
+    box-shadow: 2px 2px 30px var(--font1);
+
+    filter: dropshadow(color=var(--box-background), offx=2, offy=2);
+}
+
+.nav-link a:hover {
+    text-shadow: 2px 2px 20px var(--box-background);
 }
 
 .about-me {
@@ -236,6 +241,9 @@ footer p {
     margin: 10px 0px 10px;
 }
 
+.contact a:hover {
+    text-shadow: 2px 2px 20px var(--box-background);
+}
 /* -------------------------MEDIA SCREEN------------------------- */
 
 @media screen and (max-width: 800px){

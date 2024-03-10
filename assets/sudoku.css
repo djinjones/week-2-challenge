@@ -44,6 +44,10 @@
     color: var(--font1);
 }
 
+.nav h2 a:hover {
+    text-shadow: 2px 2px 20px var(--box-background);
+}
+
 /* -------------------------MAIN------------------------- */
 
 main {
@@ -84,6 +88,11 @@ main {
     display: flex;
     flex-direction: column;
     margin: 20px;
+}
+
+.reset button:hover {
+    text-shadow: 2px 2px 20px var(--box-background);
+    cursor: pointer;
 }
 
 /* -------------------------GAME------------------------- */
@@ -143,6 +152,9 @@ footer p {
     margin: 10px 0px 10px;
 }
 
+.contact a:hover {
+    text-shadow: 2px 2px 20px var(--box-background);
+}
 /* -------------------------MEDIA SCREEN------------------------- */
 
 @media screen and (max-width: 800px) {
