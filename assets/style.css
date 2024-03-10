@@ -18,7 +18,7 @@ nav {
     height: 90px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: solid black 2px;
+    border-bottom: solid var(--font1) 2px;
     padding: 0rem calc((100vw - 1300px)/2);
 }
 
@@ -36,7 +36,8 @@ h1 {
 }
 
 .nav-link a {
-    padding: 0px 10px 0px
+    padding: 0px 10px 0px;
+    color: var(--font1);
 }
 
 /* .social-media img {
@@ -57,7 +58,7 @@ This code was for the social media link buttons, but I dont use social media so 
 */
 
 body {
-    background-color: rgb(223, 250, 234);
+    background-color: rgb(10, 14, 11);
     /* background: linear-gradient(0.25turn, rgb(253, 183, 183), rgb(236, 236, 236)); I am leaving this code here incase I decide to use the gradient later*/
 }
 
@@ -193,7 +194,7 @@ footer p {
 }
 
 .contact {
-
+    color: var(--font1);
     margin-top: 20px;
 }
 

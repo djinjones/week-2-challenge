@@ -3,7 +3,7 @@
     --dark: #160808;
     --background-color1: #000;
     --background-color2: #00d9ff;
-    --background-color3: #00db37;
+    --background-color3: #07040f;
 }
 
 * {
@@ -17,11 +17,155 @@ nav {
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     background-color: var(--background-color1);
+    align-items: center;
+    
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+    font-size: 4.2rem;
+    font-weight: bolder;
+    color: var(--light);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.nav-link {
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-left: 0;
+    font-size: 2rem;
+    color: var(--background-color3); 
+}
+
+.nav-link a {
+    padding: 0 20px 0;
+    justify-content: center;
+}
+
+#profile-picture {
+    display: flex;
+    height: 235px;
+    width: 200px;
+    margin: 40px 20px 20px 20px;
+    padding: 0;
+    border: solid black 5px;
+}
+
+.hero {
+    background-color: var(--background-color2);
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+
+}
+
+.hero-card {
+    color: var(--dark);
+}
+
+figcaption {
+    display: none;
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.hero-card figure {
+    padding: 20px 0px 0px 20px;
+}
+
+.card-title h2 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.content {
+    padding: 0;
+    margin: 0 0 0 0;
+    color: var(--light);
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.content aside {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+.content p {
+    margin: 0px auto 0px;
+    font-size: 1.5rem;
+
+}
+
+.card section {
+    padding: 20px 0px 0px 20px;
+}
+
+#CSS {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--dark);
+}
+
+#sudoku {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color1);
+}
+
+.about-me {
+    background-color: var(--background-color3);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
 }
 
 
 
-.hero {
+.about-me h2 {
+    font-size: 4rem;
+    color: var(--light);
+    margin: 30px auto 30px 30px;
 
+}
+
+.about-me p {
+    margin: auto 20px 40px 20px;
+
+}
+
+footer {
+    background-color: #160808;
+    color: var(--light);
+    width: 100vw;
+}
+
+.contact {
+    margin: 50px 20px 50px;
+    font-size: 2rem;
+    justify-content: center;
+
+}
+.contact a {
+    padding: 20px 20px 20px;
 }
