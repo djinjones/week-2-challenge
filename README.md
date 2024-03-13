@@ -27,7 +27,7 @@ As well as a portfolio for my projects, I also wanted to create an about me seci
 
 ## Links
 
-(coming soon)
+[Dan Jones Portfolio](https://djinjones.github.io/week-2-challenge/index.html)
 
 ## API
 
