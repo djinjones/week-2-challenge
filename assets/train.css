@@ -16,7 +16,7 @@
     --rail: rgb(104, 104, 104);
     --wood: rgb(224, 180, 97);
 
-    /* It took a long time to get all of the colors for the animation to look correct, but I was glad I set all of them to variables before hand. It made it much easier to change them. */
+    /* It took a long time to get all of the colors for the animation to look correct, but I was glad I set all of them to variables before hand. It made it much easier to change them. After changing the animation from a train to 3 simpler ideas, I left the name of the colors the same because I thought the names of the colors represented the colors well. */
 }
 
 * {
@@ -27,7 +27,7 @@
     background-color: var(--background1);
 }
 
-/* I copied the same settings from the portfolio page's css to maintain a similar look for the train animation */
+/* I copied the same settings from the portfolio page's css to maintain a similar look for the animation page*/
 
 /* -------------------------NAV------------------------- */
 
@@ -63,8 +63,6 @@
     cursor: pointer;
 }
 
-/* -------------------------CSS ANIMATION------------------------- */
-
 .css-animation {
     display: flex;
     width: 100vw;
@@ -77,81 +75,23 @@
     width: 80vw;
     border: solid 2px var(--font1);
     margin: 20px 20px 20px;
+    display: flex;
+    padding: 10
     
 }
 
-/* -------------------------BACKGROUND------------------------- */
+/* -------------------------CSS ANIMATION-------------------------*/
 
-.background {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(var(--sky1),var(--sky2),var(--sky3));
+.loading-screen {
     justify-content: center;
-    align-items: center;
+    width: 40vw;
     display: flex;
+
 }
 
-/* .sky {
-    width: 100%;
-    height: 70%;
-    opacity: .2;
-
-} */
-
-.train {
-    margin: 0 0 0;
-    padding: 0 0 0;
-    display: flex;
-    justify-content: center;
-    background: none;
-    height: 110px;
-    width: 165px;
-    flex-wrap: wrap;
-    flex-direction: row;
+.loading-screen h2 {
+    margin: auto;
 }
-
-.stack {
-    width: 25px;
-    height: 32px;
-    margin-top: 18px;
-}
-
-.top {
-    height: 50px;
-    width: 40px;
-    margin-left: 25px;
-}
-
-.body {
-    width: 110px;
-    height: 60px;
-}
-
-.wheels {
-    margin-right: 40px;
-    display: flex;
-}
-
-.wheel {
-    width: 40px;
-    display: flex;
-    height: 50px;
-    border-radius: 50%;
-    border: solid var(--rail) 2px;
-    margin: 0 0 0;
-    padding: 0 0 0;
-    margin-left: 4px;
-}
-
-.back {
-    width: 55px;
-    height: 90px;
-}
-
-
-/* -------------------------TRAIN------------------------- */
-
-/* -------------------------TRACK------------------------- */
 
 /* -------------------------FOOTER------------------------- */
 
@@ -193,3 +133,76 @@ footer p {
 }
 
 /* -------------------------MEDIA SCREEN------------------------- */
+
+
+/* -------------------------OLD NOTES------------------------- */
+/*
+Originally I was going to try to animate a train moving through a desert at night, but it was a little too much for me to do as a starter CSS animaiton so I switched to something else. I did want to leave the old code in here in case I come back
+
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--sky1),var(--sky2),var(--sky3));
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+ .sky {
+    width: 100%;
+    height: 70%;
+    opacity: .2;
+
+}  .train {
+    margin: 0 0 0;
+    padding: 0 0 0;
+    display: flex;
+    justify-content: center;
+    background: none;
+    height: 110px;
+    width: 165px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.stack {
+    width: 25px;
+    height: 32px;
+    margin-top: 18px;
+}
+
+.top {
+    height: 50px;
+    width: 40px;
+    margin-left: 25px;
+}
+
+.body {
+    width: 110px;
+    height: 60px;
+}
+
+.wheels {
+    margin-right: 0;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 30px;
+    
+}
+
+.wheel {
+    width: 40px;
+    display: flex;
+    height: 50px;
+    border-radius: 50%;
+    border: solid var(--rail) 2px;
+    margin: 0 0 0;
+    padding: 0 0 0;
+
+}
+
+.back {
+    width: 55px;
+    height: 90px;
+} 
