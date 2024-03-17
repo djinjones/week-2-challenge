@@ -80,12 +80,18 @@ This code was for the social media link buttons, but I dont use social media so 
 
 .hero-card {
     flex-direction: column;
+    color: var(--font1);
     padding: 10px 10px 10px;
     border: solid black 2px;
-    background-image: url(https://fitsmallbusiness.com/wp-content/uploads/2021/10/Screenshot_of_Monthly_Payroll_Tabs_Sum_in_One_Column.jpg);
+    background-image: url(./Screenshot\ 2024-03-16\ 203318.png);
+    background-position-y: 25%;
+    background-position-x: 25%;
     padding: 10px;
     margin: 20px;
     height: 60vh;
+}
+.hero-card h2 {
+    margin-top: 60px;
 }
 /* I am using the class: 'hero' for the main project on my website. This will be our challenge week 3 assingment which is technically our first project so I wanted to use this for the main project in my portfolio */
 /* -------------------------MAIN------------------------- */
@@ -172,9 +178,9 @@ This code was for the social media link buttons, but I dont use social media so 
     box-shadow: 2px 2px 30px var(--font1);
 }
 
-.hero-card:hover .coming-soon {
+/* .hero-card:hover .coming-soon {
     display: flex;
-}
+} */
 
 .hero-card:hover {
     cursor: pointer;
