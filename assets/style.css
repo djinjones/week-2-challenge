@@ -131,14 +131,18 @@ This code was for the social media link buttons, but I dont use social media so 
     width: 45vw;
     display: flex;
     flex-direction: column;
-    color: var(--font2);
+    color: var(--box-background);
     height: 40vh;
     border: solid black 2px;
     text-decoration: none;
     padding: 10px;
     margin: 20px;
     background-size: 800px;
-    background-image: url(https://i.gifer.com/BXe0.gif);
+    background-image: url(./darkmodeblog.png);
+}
+
+#css a {
+    color: var(--box-background);
 }
 
 #sudoku {
